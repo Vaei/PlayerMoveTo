@@ -11,6 +11,10 @@ These nodes will be available with the use of this plugin:
 * `Gameplay Player Move To Actor or Location`
 * `Player Move To Actor or Location`
 
+## Example Usage
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/gameplay_playermoveto.png)
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
+
 This plugin was created using Unreal 5.1
 
 ## How to Use
