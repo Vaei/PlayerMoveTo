@@ -13,14 +13,14 @@ These nodes will be available with the use of this plugin:
 
 This plugin was created using Unreal 5.1
 
-## Example Usage
-![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/gameplay_playermoveto.png)
-![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
-
 ## How to Use
 Clone to your project's "Plugins" folder (you may need to create this).
 
 Then simply add the nodes described above as required.
+
+## Example Usage
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/gameplay_playermoveto.png)
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
 
 ## Versions
 ### 1.0.0.0
