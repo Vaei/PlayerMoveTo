@@ -11,6 +11,11 @@ These nodes will be available with the use of this plugin:
 
 This plugin was created using Unreal 5.1
 
+## How to Use
+Clone to your project's "Plugins" folder (you may need to create this).
+
+Then simply add the nodes described above as required.
+
 ## Versions
 ### 1.0.0.0
 * Initial Release
