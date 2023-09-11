@@ -1,6 +1,8 @@
 # PlayerMoveTo
 Adds nodes equivalent to AIMoveTo for PlayerController
 
+The goal is to provide pathfinding for PlayerController, for use-cases like making the player character run to the car's door in GTA, or towards a lever before pulling it, or auto-move (eg. horse following road in some games)
+
 `GP Move To Actor or Location` is available for gameplay abilities (only) within Unreal Engine, but requires additional components, and didn't modify the acceleration so animations don't play.
 
 There is an additional node added to this plugin for use outside of gameplay abilities as well.
