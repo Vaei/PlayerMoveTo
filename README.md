@@ -18,6 +18,10 @@ Clone to your project's "Plugins" folder (you may need to create this).
 
 Then simply add the nodes described above as required.
 
+## Example Usage
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/gameplay_playermoveto.png)
+![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
+
 ## Versions
 ### 1.0.1.0
 * Added null check causing crash on sim proxies
