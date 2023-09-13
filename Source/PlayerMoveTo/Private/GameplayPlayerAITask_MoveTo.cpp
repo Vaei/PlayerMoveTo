@@ -37,6 +37,11 @@ UGameplayPlayerAITask_MoveTo* UGameplayPlayerAITask_MoveTo::GameplayPlayerAIMove
 	bool bUsePathfinding, bool bUseContinuousGoalTracking, EAIOptionFlag::Type ProjectGoalOnNavigation,
 	TSubclassOf<UNavigationQueryFilter> FilterClass)
 {
+	if (!Controller)
+	{
+		return nullptr;
+	}
+	
 	UGameplayPlayerAITask_MoveTo* MyTask = NewAbilityTask<UGameplayPlayerAITask_MoveTo>(OwningAbility, TaskInstanceName);
 	if (MyTask)
 	{
@@ -135,13 +140,16 @@ void UGameplayPlayerAITask_MoveTo::Activate()
 {
 	Super::Activate();
 
-	PathFollowingComp = InitNavigationControl(*OwnerController);
+	if (OwnerController)
+	{
+		PathFollowingComp = InitNavigationControl(*OwnerController);
 
-	UE_CVLOG(bUseContinuousTracking, GetGameplayTasksComponent(), LogGameplayTasks, Log, TEXT("Continuous goal tracking requested, moving to: %s"),
-		MoveRequest.IsMoveToActorRequest() ? TEXT("actor => looping successful moves!") : TEXT("location => will NOT loop"));
+		UE_CVLOG(bUseContinuousTracking, GetGameplayTasksComponent(), LogGameplayTasks, Log, TEXT("Continuous goal tracking requested, moving to: %s"),
+			MoveRequest.IsMoveToActorRequest() ? TEXT("actor => looping successful moves!") : TEXT("location => will NOT loop"));
 
-	MoveRequestID = FAIRequestID::InvalidRequest;
-	ConditionalPerformMove();
+		MoveRequestID = FAIRequestID::InvalidRequest;
+		ConditionalPerformMove();
+	}
 }
 
 void UGameplayPlayerAITask_MoveTo::ConditionalPerformMove()

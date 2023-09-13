@@ -19,5 +19,8 @@ Clone to your project's "Plugins" folder (you may need to create this).
 Then simply add the nodes described above as required.
 
 ## Versions
+### 1.0.1.0
+* Added null check causing crash on sim proxies
+
 ### 1.0.0.0
 * Initial Release
