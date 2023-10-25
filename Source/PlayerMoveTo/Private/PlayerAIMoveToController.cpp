@@ -5,6 +5,26 @@
 
 #include "GameplayTasksComponent.h"
 
+UGameplayTasksComponent* APlayerAIMoveToController::GetGameplayTasksComponent(const UGameplayTask& Task) const
+{
+	return GetGameplayTasksComponent();
+}
+
+AActor* APlayerAIMoveToController::GetGameplayTaskOwner(const UGameplayTask* Task) const
+{
+	return const_cast<APlayerAIMoveToController*>(this);
+}
+
+AActor* APlayerAIMoveToController::GetGameplayTaskAvatar(const UGameplayTask* Task) const
+{
+	return GetPawn();
+}
+
+uint8 APlayerAIMoveToController::GetGameplayTaskDefaultPriority() const
+{
+	return FGameplayTasks::DefaultPriority - 1;
+}
+
 void APlayerAIMoveToController::CacheGameplayTasksComponent(APawn* InPawn)
 {
 	// a Pawn controlled by AI _requires_ a GameplayTasksComponent, so if Pawn 
