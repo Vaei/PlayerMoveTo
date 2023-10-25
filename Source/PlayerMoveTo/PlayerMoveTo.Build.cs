@@ -7,9 +7,6 @@ public class PlayerMoveTo : ModuleRules
 	public PlayerMoveTo(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		bEnforceIWYU = true;
-		
-		// bUseUnity = false;
 
 		PublicDependencyModuleNames.AddRange(
 			new string[]
