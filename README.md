@@ -18,6 +18,8 @@ Clone to your project's "Plugins" folder (you may need to create this).
 
 Then simply add the nodes described above as required.
 
+If using the `Player Move To Actor or Location` then you will need to inherit your PlayerController from `APlayerAIMoveToController`. If you cannot inherit for any reason, then copy/paste the logic into your own PlayerController.
+
 ## Example Usage
 ![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/gameplay_playermoveto.png)
 ![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
