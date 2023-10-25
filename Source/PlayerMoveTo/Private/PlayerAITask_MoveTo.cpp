@@ -619,4 +619,3 @@ void UPlayerAITask_MoveTo::ConditionalUpdatePath()
 		}
 	}
 }
-
