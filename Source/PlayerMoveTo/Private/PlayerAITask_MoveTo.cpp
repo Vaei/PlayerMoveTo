@@ -10,6 +10,7 @@
 #include "GameplayTasksComponent.h"
 #include "NavigationSystem.h"
 #include "Tasks/AITask.h"
+#include "Logging/MessageLog.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(PlayerAITask_MoveTo)
 
