@@ -33,5 +33,4 @@ public:
 public:
 	void CacheGameplayTasksComponent(APawn* InPawn);
 	virtual void OnPossess(APawn* InPawn) override;
-	virtual void SetPawn(APawn* InPawn) override;
 };

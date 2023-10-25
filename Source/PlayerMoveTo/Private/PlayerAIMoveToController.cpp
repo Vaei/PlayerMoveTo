@@ -47,10 +47,3 @@ void APlayerAIMoveToController::OnPossess(APawn* InPawn)
 
 	CacheGameplayTasksComponent(InPawn);
 }
-
-void APlayerAIMoveToController::SetPawn(APawn* InPawn)
-{
-	Super::SetPawn(InPawn);
-
-	// CacheGameplayTasksComponent(InPawn);
-}
