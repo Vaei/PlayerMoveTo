@@ -6,6 +6,8 @@
 #include "GameplayTasksComponent.h"
 #include "GameFramework/Pawn.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(PlayerAIMoveToController)
+
 UGameplayTasksComponent* APlayerAIMoveToController::GetGameplayTasksComponent(const UGameplayTask& Task) const
 {
 	return GetGameplayTasksComponent();
