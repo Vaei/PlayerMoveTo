@@ -1,11 +1,11 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.1.0",
+	"VersionName": "1.0.2",
 	"FriendlyName": "PlayerMoveTo",
 	"Description": "Adds nodes equivalent to AIMoveTo for PlayerController",
 	"Category": "Gameplay",
-	"CreatedBy": "Vaei",
+	"CreatedBy": "Jared Taylor (Vaei)",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
