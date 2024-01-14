@@ -25,8 +25,12 @@ If using the `Player Move To Actor or Location` then you will need to inherit yo
 ![example usage](https://github.com/Vaei/repo_files/blob/main/PlayerMoveTo/controller_playermoveto.png)
 
 ## Versions
-### 1.0.1.0
+
+### 1.0.2
+* Add missing cpp include
+
+### 1.0.1
 * Added null check causing crash on sim proxies
 
-### 1.0.0.0
+### 1.0.0
 * Initial Release
