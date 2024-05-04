@@ -11,6 +11,7 @@
 #include "NavigationSystem.h"
 #include "Tasks/AITask.h"
 #include "GameFramework/Pawn.h"
+#include "NavFilters/NavigationQueryFilter.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(GameplayPlayerAITask_MoveTo)
 
