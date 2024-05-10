@@ -15,6 +15,8 @@
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(PlayerAITask_MoveTo)
 
+DEFINE_LOG_CATEGORY_STATIC(LogPlayerTaskMoveTo, Log, All);
+
 UPlayerAITask_MoveTo::UPlayerAITask_MoveTo(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
@@ -46,9 +48,16 @@ UPlayerAITask_MoveTo* UPlayerAITask_MoveTo::PlayerAIMoveTo(APlayerController* Co
 	IGameplayTaskOwnerInterface* GameplayTaskOwnerInterface = Controller ? Cast<IGameplayTaskOwnerInterface>(Controller) : nullptr;
 	if (!GameplayTaskOwnerInterface)
 	{
-		FMessageLog MessageLog{"PIE"};
 		const FString ErrorMsg = FString::Printf(TEXT("UPlayerAITask_MoveTo: Controller { %s } does not inherit IGameplayTaskOwnerInterface! Aborting Movement"), *GetNameSafe(Controller));
-		MessageLog.Error(FText::FromString(ErrorMsg));
+		if (IsInGameThread())
+		{
+			FMessageLog MessageLog{"PIE"};
+			MessageLog.Error(FText::FromString(ErrorMsg));
+		}
+		else
+		{
+			UE_LOG(LogPlayerTaskMoveTo, Error, TEXT("%s"), *ErrorMsg);
+		}
 		return nullptr;
 	}
 	

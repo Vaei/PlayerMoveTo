@@ -26,6 +26,9 @@ If using the `Player Move To Actor or Location` then you will need to inherit yo
 
 ## Versions
 
+### 1.0.3
+* Add IsInGameThread() check before FMessageLog
+
 ### 1.0.2
 * Add missing cpp include
 
